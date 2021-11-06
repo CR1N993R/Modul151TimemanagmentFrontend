@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="504.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.fenix.timemanagementfrontend.controller.view.ViewEntriesController">
+    <TableView fx:id="table" prefHeight="463.0" prefWidth="743.0" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="entryId" prefWidth="146.0" text="ID" />
+            <TableColumn fx:id="checkIn" prefWidth="224.0" text="Check In" />
+            <TableColumn fx:id="checkOut" prefWidth="369.0" text="Check Out" />
+            <TableColumn fx:id="category" prefWidth="369.0" text="Category" />
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+    </TableView>
+    <Button layoutX="678.0" layoutY="470.0" mnemonicParsing="false" onAction="#create" text="Create" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="7.0" />
+    <Button layoutX="14.0" layoutY="470.0" mnemonicParsing="false" onAction="#logout" text="Logout" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="14.0" />
+    <Button fx:id="categoryMenu" layoutX="274.0" layoutY="473.0" mnemonicParsing="false" onAction="#categories" text="Categories" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="274.0" />
+    <Button fx:id="manageUsers" layoutX="75.0" layoutY="473.0" mnemonicParsing="false" onAction="#user" text="Manage Users" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="75.0" />
+    <Button layoutX="170.0" layoutY="473.0" mnemonicParsing="false" onAction="#showBalances" text="Show Balances" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="170.0" />
+</AnchorPane>
